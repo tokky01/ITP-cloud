@@ -14,3 +14,8 @@ export type Game = [
   Frame,
   LastFrame
 ];
+
+export enum  BonusType {
+  STRIKE = 'strike',
+  SPARE = 'spare'
+}

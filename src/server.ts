@@ -6,8 +6,8 @@ export const app = express();
 
 app.use(express.json());
 
-app.post("/compute", (request, response) => {
-  const game = request.body.game;
+app.post("/compute", (req, res) => {
+  const game = req.body.game;
   // TODO: Validate input
 
   const score = compute(game);
